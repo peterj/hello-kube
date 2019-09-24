@@ -52,12 +52,12 @@ Instead of hardcoding the first name in the code, we want to read the first name
     ```
     $ kubectl get cm hello-kube-config -o yaml
     apiVersion: v1
-    data:
-    firstName: Peter
     kind: ConfigMap
     metadata:
-    name: hello-kube-config
-    namespace: default
+      name: hello-kube-config
+      namespace: default
+    data:
+      firstName: Peter
     ```
 
 1. Mount the config map and the value as an environment variable in the deployment file. Make copy of the existing `deployment.yaml` file (you can name it `deployment-configmaps.yaml` and update it to mount the config map and it's values under the `env` key, like this:
