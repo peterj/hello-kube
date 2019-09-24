@@ -1,6 +1,11 @@
 # hello-kube
 
-An example application for learning basics of Kubernetes.
+An example application used for learning basics of Kubernetes (deployments, config maps and secrets).
+
+## Getting Started
+
+1. Fork this repo under your username
+1. Go through the [exercises](./exercises.md)
 
 ## Prerequisites
 
@@ -9,7 +14,7 @@ An example application for learning basics of Kubernetes.
 - Kubernetes
 - NodeJS, if you want to run the app locally
 
-# Development
+## Development
 
 To start the application using `nodemon` run:
 
@@ -17,7 +22,7 @@ To start the application using `nodemon` run:
 npm start dev
 ```
 
-# Building the image
+### Build the image
 
 From the root folder, run:
 
@@ -25,7 +30,7 @@ From the root folder, run:
 docker build -t hello-kube .
 ```
 
-# Run the application
+### Run the application
 
 To run the application on a host machine:
 

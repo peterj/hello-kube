@@ -11,7 +11,9 @@ const getFiles = async (folderName) =>
 router.get('/', async (req, res, next) => {
     const folderName = "my-secrets";
     // Update to your name
-    const firstName = "Peter";
+    const firstName = "Peter"
+    // Read a value from environment variable:
+    // process.env.FIRST_NAME_VARIABLE;
 
     let secrets = `Folder ${folderName} does not exist`;
     try {
@@ -24,6 +26,7 @@ router.get('/', async (req, res, next) => {
         name: firstName,
         environmentVars: process.env,
         files: secrets,
+        hostname: process.env.HOSTNAME
     });
 });
 
