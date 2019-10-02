@@ -4,6 +4,21 @@
 
 In this part you will deploy the Hello Web and a Greeter service v1 to the cluster. Once you've deployed it, you will create gateway and a virtual service to be able to access the Hello Web from outside.
 
+If you haven't enabled automatic sidecar injection for Istio, make sure to run this command:
+```
+kubectl label namespace default istio-injection=enabled
+```
+
+To check if Istio injection is enabled, run: 
+
+```
+$ kubectl get namespace -L istio-injection
+NAME           STATUS    AGE       ISTIO-INJECTION
+default        Active    1h        enabled
+istio-system   Active    1h
+...
+```
+
 ## 1. Deploy the Hello Web and Greeter Service v1
 
 1. Create the Hello Web deployment and service with Istio sidecar injected:
