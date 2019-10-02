@@ -1,5 +1,11 @@
 ## 1. First depoyment
 
+#### Prerequisites
+- Docker - install [Docker for Mac](https://docs.docker.com/docker-for-mac/)/[Windows](https://docs.docker.com/docker-for-windows/)
+- Kubernetes - if using Docker for Mac/Windows, you can enable Kubernetes support in the settings, for Linux, install [Minikube](https://minikube.sigs.k8s.io/docs/start/)
+- Kubernetes CLI (`kubectl`) - install [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+
 1. Go to [Docker Hub](https://hub.docker.com) and create your Docker Hub account.
 1. Login to Docker Hub:
 
